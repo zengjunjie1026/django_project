@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+register
+
+<hr>
+<br>
+<form method="post" action="">
+    {% csrf_token %}
+    {% for i in form %}
+        {{ i.label }}
+        :
+        {{ i }}
+        <hr>
+    {% endfor %}
+
+
+    <input type="submit" name="Create User">
+
+</form>
+</body>
+</html>
